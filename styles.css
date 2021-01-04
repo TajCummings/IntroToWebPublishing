@@ -1,0 +1,142 @@
+body{
+	text-align:left;
+	background-color:rgb(173,174,179);/*modern grey*/
+	/*rgb(119,52,219); /*purple*/
+}
+main{
+	background-color:rgb(190, 196, 170); /*greens*/
+	width:97%;
+	margin: 0 auto;
+}
+header{
+	margin left: auto;
+	margin right:auto;
+	text-align: center;
+}
+header figure img{
+	max-width: 100%
+}
+nav ul{
+	padding-inline-start:0;
+	list-style: none;
+	text-align: center;
+}
+nav ul li a{
+	display: block;
+	color:rgb(102, 51, 153); /*rebecca purple*/
+	background-color:rgb(255,255,255);
+	font-size: 1.5em;
+	padding: 0px;
+	margin: 10px;
+	text-decoration: none;
+	width:95%;
+}
+nav ul li a:hover{
+	color: rgb(0,0,0);
+	background-color:rgb(238,225,209); /*yellow*/
+}
+nav ul li a:visited{
+	color: rgb(190,196,170);
+}
+
+.normal p{
+	text-align: left;
+}
+.normal li{
+	margin: 5px 0;
+}
+
+section{
+	/*display: flex;*/
+	padding: 0,10px;
+}
+section article, section aside{
+    padding: 0 10px;
+   	margin: 0,10px; 
+}
+section article, section aside li{
+	font-weight: normal;
+}
+
+section aside{
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 200px;
+}
+section aside img{
+	width: 100%;
+	max-height: 250px;
+}
+section.spotlight{
+	width: 100%;
+}
+
+section.spotlight figure{
+	margin: 0 auto;
+	align-content: center;
+}
+section.spotlight h2, h3, p{
+	text-align: center;
+}
+section.spotlight img{
+/*	max-width: 200px;*/
+	/*margin: 10px; 
+	padding: 10px;
+	flex: 0 0 50px;*/
+	width: 100%
+}
+
+section.spotlight article{
+	background-color:rgb(238, 225, 209); /*Yellow*/
+	border: 1px solid black;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+}
+.button{
+	border: 1px solid black;
+	background-color:rgb(69, 77, 96) ;/* color blue*/; /*Yellow*/
+	/*rgb(119,52,219); purple fromnbackground*/
+	/*background-color:rgb(229, 205, 253);*/
+	text-align:center;
+	padding: 5px;
+}
+.button a{
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+.button a:hover{
+	background-color: rgb(229, 205, 253);
+
+}
+footer{
+	background-color:rgb(229, 205, 253); /*rebecca purple*/
+	color: white;
+	padding: 10px 0;
+}
+
+@media screen and (min-width: 1020px){
+    header{
+    	display: inline-flex;
+		flex-wrap: wrap;
+		text-align: center;
+    }
+}/*end of 1020px*/
+@media screen and (min-width: 700px){
+	nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	flex-direction: row;
+	justify-content: center;
+	}
+	section{
+	display: flex;
+	}
+	section aside{
+		display: block;
+	}
+
+
+}/*end of 700*/
