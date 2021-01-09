@@ -1,0 +1,40 @@
+body{
+	text-align:left;
+	background-color:rgb(173,174,179);/*modern grey*/
+	/*rgb(119,52,219); /*purple*/
+}
+main{
+	background-color:rgb(190, 196, 170); /*greens*/
+	width:97%;
+	margin: 0 auto;
+}
+header{
+	margin left: auto;
+	margin right:auto;
+	text-align: center;
+}
+header figure img{
+	max-width: 100%
+}
+nav ul{
+	padding-inline-start:0;
+	list-style: none;
+	text-align: center;
+}
+nav ul li a{
+	display: block;
+	color:rgb(102, 51, 153); /*rebecca purple*/
+	background-color:rgb(255,255,255);
+	font-size: 1.5em;
+	padding: 0px;
+	margin: 10px;
+	text-decoration: none;
+	width:95%;
+}
+nav ul li a:hover{
+	color: rgb(0,0,0);
+	background-color:rgb(238,225,209); /*yellow*/
+}
+nav ul li a:visited{
+	color: rgb(190,196,170);
+}
